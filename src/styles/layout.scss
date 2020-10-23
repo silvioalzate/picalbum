@@ -1,0 +1,209 @@
+#app {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+
+.view{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.messages{
+    position: absolute;
+    width: 100%;
+    top: 14%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    height: 6%;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    animation: slideRight 1s;
+}
+
+.display{
+    display: flex;
+}
+
+@keyframes slideRight {
+    from{right:-300px;opacity:0}
+    to{right:0;opacity:1}
+}
+
+@keyframes fadeOut {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.steps{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6%;
+
+}
+
+.step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;    
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.selected{
+    background-color: var(--accent);
+}
+
+.body{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 78%;
+    overflow: scroll;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8%;
+    
+}
+
+.left .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 8%;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.button{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    color: var(--white);
+    background-color: var(--primary);
+    font-size: 1rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+}
+
+
+.input {
+    width: 75%;
+    height: 40px;
+    border: 0;
+    border-bottom: 2px solid var(--primary);
+    outline: none;
+    color: var(--primary);
+    font-size: 1rem;
+    margin: 10px;
+}
+
+::placeholder {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.facebook {
+    background-color: var(--facebook);
+}
+
+.google {
+    background-color: var(--google);
+}
+
+.bg {
+    background: rgb(34, 189, 195);
+    background: linear-gradient(118deg,
+            rgba(34, 189, 195, 1) 45%,
+            rgba(24, 52, 226, 0.8575805322128851) 100%);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.text{
+   color: var(--primary);
+   font-size: 1.2rem;
+   margin: 5px; 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 5px;
+    padding: 5px;    
+}
+
+.image {    
+    margin: 3px;
+}
+
+.select {
+    width: 75%;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--primary);
+    margin: 10px;
+    color: var(--primary);
+    font-size: 1rem;
+    outline: none;
+}
